@@ -6,7 +6,7 @@ import ThemeContext from '../../../store/themeContext'
 function Main() {
   const themeCtx = useContext(ThemeContext)
   return (
-    <div className={`${themeCtx.isDarkMode ? "bg-gray-700" : "null"}`}>
+    <div className={`${themeCtx.isDarkMode ? "bg-gray-700" : "null"} ${styles.mainBackground}`}>
       <div className={`h-[100vh] flex flex-col justify-center w-3/4 mx-auto `}>
         <div
           className={`text-7xl  ${
