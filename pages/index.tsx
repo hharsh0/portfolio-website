@@ -1,11 +1,14 @@
 import type { NextPage } from 'next'
-import NavBar from '../components/NavBar'
-import Footer from '../components/Footer'
+import NavBar from '../components/HomePage/NavBar'
+import Main from '../components/HomePage/Main'
+import Footer from '../components/HomePage/Footer'
+import styles from '../styles/navBar.module.css'
 
 const Home: NextPage = () => {
   return (
-    <div className='w-3/4 mx-auto'>
+    <div className={`mx-auto`}>
       <NavBar />
+      <Main />
       <Footer />
     </div>
   )

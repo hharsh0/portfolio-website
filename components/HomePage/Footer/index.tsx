@@ -1,9 +1,9 @@
 import React from 'react'
-import styles from '../../styles/NavBar.module.css'
+import styles from '../../../styles/NavBar.module.css'
 
 function Footer() {
   return (
-    <div className={`bg-[#D6D9DD] ${styles.footerBackground}`}>
+    <div className={`bg-[#D6D9DD] ${styles.footerBackground} w-3/4 mx-auto`}>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto text-center">
           <div className="flex flex-col text-center w-full mb-10">

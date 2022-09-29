@@ -14,3 +14,17 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.mainBackground{
+    background-image: url('../public/main-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.centerit{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+}
