@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../../../styles/navBar.module.css'
+import Card from '../../Card';
 
 function MySkills() {
   return (
@@ -168,6 +169,7 @@ function MySkills() {
           </div>
         </div>
       </section>
+      <Card />
     </div>
   );
 }
