@@ -102,3 +102,15 @@ input:checked + .slider:before {
   transition: background 0s;
 }
 
+
+/* selection color */
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #E63946;
+}
+
+::selection {
+  color: white;
+  background: #E63946;
+}
