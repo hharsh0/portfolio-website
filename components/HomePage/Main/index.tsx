@@ -2,11 +2,17 @@ import React,{useContext} from 'react'
 import styles from '../../../styles/NavBar.module.css'
 import DarkModeButton from '../../DarkModeButton'
 import ThemeContext from '../../../store/themeContext'
+import Link from "next/link";
+
 
 function Main() {
   const themeCtx = useContext(ThemeContext)
   return (
-    <div className={`${themeCtx.isDarkMode ? "bg-gray-700" : "null"} ${styles.mainBackground}`}>
+    <div
+      className={`${themeCtx.isDarkMode ? "bg-gray-700" : "null"} ${
+        styles.mainBackground
+      }`}
+    >
       <div className={`h-[100vh] flex flex-col justify-center w-3/4 mx-auto `}>
         <div
           className={`text-7xl  ${
@@ -33,7 +39,7 @@ function Main() {
               : "text-[#2D2D2D] border-[#5A5A5A]"
           } rounded-full  `}
         >
-          GET IN TOUCH
+          <Link href='/contact'>GET IN TOUCH</Link>
         </button>
         <div className="mt-8">
           <DarkModeButton />

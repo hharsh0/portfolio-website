@@ -1,6 +1,8 @@
 import React,{useContext} from 'react'
 import ThemeContext from '../../store/themeContext';
 import styles from '../../styles/NavBar.module.css'
+import Link from "next/link";
+
 
 function NavBar() {
     const themeCtx = useContext(ThemeContext)
@@ -19,12 +21,24 @@ function NavBar() {
             Harsh<span className="text-[#E63946]">.</span>
           </div>
           <div className={`flex content-center ${styles.navFont}`}>
-            <div className={`text-[#E63946] px-3 py-1 cursor-pointer `}>Home</div>
-            <div className={`px-3 py-1 cursor-pointer ${themeCtx.isDarkMode ? 'text-white' : ''}`}>
-              About me
+            <div
+              className={`text-[#E63946] px-4 py-1 cursor-pointer font-bold`}
+            >
+              <Link href='/'>Home</Link>
             </div>
-            <div className={`px-3 py-1 cursor-pointer ${themeCtx.isDarkMode ? 'text-white' : ''}`}>
-              Contact
+            <div
+              className={`px-4 py-1 cursor-pointer font-bold ${
+                themeCtx.isDarkMode ? "text-white" : ""
+              }`}
+            >
+              <Link href=''>About me</Link>
+            </div>
+            <div
+              className={`px-4 py-1 cursor-pointer font-bold  ${
+                themeCtx.isDarkMode ? "text-white" : ""
+              }`}
+            >
+              <Link href='/contact'>Contact</Link>
             </div>
           </div>
         </div>
