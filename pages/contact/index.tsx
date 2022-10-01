@@ -3,10 +3,10 @@ import React from 'react'
 function Contact() {
   return (
     <>
-      <section className="text-gray-400 bg-gray-900 body-font relative h-[100vh]">
+      <section className="text-gray-400 bg-gray-700 body-font relative h-[100vh]">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-[#E63946]">
               Contact Us
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
@@ -25,6 +25,7 @@ function Contact() {
                     Name
                   </label>
                   <input
+                    autoComplete="off"
                     type="text"
                     id="name"
                     name="name"
@@ -41,6 +42,7 @@ function Contact() {
                     Email (Optional)
                   </label>
                   <input
+                    autoComplete="off"
                     type="email"
                     id="email"
                     name="email"
@@ -65,11 +67,11 @@ function Contact() {
                 </div>
               </div>
               <div className="p-2 w-full">
-                <button className="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">
+                <button className="flex mx-auto text-white bg-[#E63946] border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">
                   SEND
                 </button>
               </div>
-              <div className="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
+              <div className="p-2 w-full pt-8 mt-8 border-t border-gray-600 text-center">
                 <span className="inline-flex">
                   <a className="text-gray-500">
                     <svg
