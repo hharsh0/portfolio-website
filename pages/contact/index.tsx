@@ -1,10 +1,12 @@
 import React from 'react'
+import NavBar from '../../components/NavBar';
 
 function Contact() {
   return (
     <>
       <section className="text-gray-400 bg-gray-700 body-font relative h-[100vh]">
-        <div className="container px-5 py-24 mx-auto">
+        <NavBar />
+        <div className="container px-5 py-48 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-[#E63946]">
               Contact Us

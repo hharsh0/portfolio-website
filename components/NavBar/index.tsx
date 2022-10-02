@@ -18,27 +18,28 @@ function NavBar() {
               themeCtx.isDarkMode ? "text-white" : ""
             }`}
           >
-            Harsh<span className="text-[#E63946]">.</span>
+            <Link href="/">Harsh</Link>
+            <span className="text-[#E63946]">.</span>
           </div>
           <div className={`flex content-center ${styles.navFont}`}>
             <div
               className={`text-[#E63946] px-4 py-1 cursor-pointer font-bold`}
             >
-              <Link href='/'>Home</Link>
+              <Link href="/">Home</Link>
             </div>
             <div
               className={`px-4 py-1 cursor-pointer font-bold ${
                 themeCtx.isDarkMode ? "text-white" : ""
               }`}
             >
-              <Link href=''>About me</Link>
+              <Link href="">About me</Link>
             </div>
             <div
               className={`px-4 py-1 cursor-pointer font-bold  ${
                 themeCtx.isDarkMode ? "text-white" : ""
               }`}
             >
-              <Link href='/contact'>Contact</Link>
+              <Link href="/contact">Contact</Link>
             </div>
           </div>
         </div>
