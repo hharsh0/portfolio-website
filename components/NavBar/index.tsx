@@ -2,10 +2,12 @@ import React,{useContext} from 'react'
 import ThemeContext from '../../store/themeContext';
 import styles from '../../styles/NavBar.module.css'
 import Link from "next/link";
+import {useState} from 'react'
 
 
 function NavBar() {
     const themeCtx = useContext(ThemeContext)
+    
 
   return (
     <div className={``}>

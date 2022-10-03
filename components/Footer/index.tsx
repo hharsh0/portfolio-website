@@ -1,10 +1,10 @@
-import React from 'react'
+import Link from "next/link";
 import styles from '../../styles/NavBar.module.css'
 
 function Footer() {
   return (
     <div className={`bg-[#D6D9DD]`}>
-      <div className={` ${styles.footerBackground} w-3/4 mx-auto`}>
+      <div className={`${styles.footerBackground} w-3/4 mx-auto`}>
         <section className="text-gray-600 body-font">
           <div className="container px-5 py-24 mx-auto text-center">
             <div className="flex flex-col text-center w-full mb-10">
@@ -23,7 +23,7 @@ function Footer() {
             <button
               className={`text-sm border mx-auto py-2 px-5 ${styles.navFont} text-[#2D2D2D] rounded-full border-[#5A5A5A]`}
             >
-              CONTACT ME
+              <Link href="/contact">CONTACT ME</Link>
             </button>
           </div>
         </section>
