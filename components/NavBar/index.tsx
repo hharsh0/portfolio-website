@@ -34,13 +34,11 @@ function NavBar() {
               <Link href="/">Home</Link>
             </div>
             <div
-              className={`px-4 py-1 cursor-pointer font-bold ${
-                themeCtx.isDarkMode ? "text-white" : ""
-              }
+              className={`px-4 py-1 cursor-pointer font-bold 
               ${router.pathname === "/about" ? "text-[#E63946]" : "text-white"}
               `}
             >
-              <Link href="">About me</Link>
+              <Link href="/about">About me</Link>
             </div>
             <div
               className={`px-4 py-1 cursor-pointer font-bold 
