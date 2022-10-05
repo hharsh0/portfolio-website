@@ -25,17 +25,21 @@ function NavBar() {
             <Link href="/">Harsh</Link>
             <span className="text-[#E63946]">.</span>
           </div>
-          <div className={`flex content-center ${styles.navFont}`}>
+          <div
+            className={`flex content-center ${styles.navFont} ${
+              themeCtx.isDarkMode ? "text-white" : ""
+            }`}
+          >
             <div
               className={` ${
-                router.pathname === "/" ? "text-[#E63946]" : "text-white"
+                router.pathname === "/" ? "text-[#E63946]" : ""
               } px-4 py-1 cursor-pointer font-bold`}
             >
               <Link href="/">Home</Link>
             </div>
             <div
               className={`px-4 py-1 cursor-pointer font-bold 
-              ${router.pathname === "/about" ? "text-[#E63946]" : "text-white"}
+              ${router.pathname === "/about" ? "text-[#E63946]" : ""}
               `}
             >
               <Link href="/about">About me</Link>
@@ -43,7 +47,7 @@ function NavBar() {
             <div
               className={`px-4 py-1 cursor-pointer font-bold 
               ${
-                router.pathname === "/contact" ? "text-[#E63946]" : "text-white"
+                router.pathname === "/contact" ? "text-[#E63946]" : ""
               }
               `}
             >
