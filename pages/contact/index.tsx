@@ -3,8 +3,8 @@ import NavBar from '../../components/NavBar';
 
 function Contact() {
   return (
-    <>
-      <section className="text-gray-400 bg-gray-700 body-font relative h-[100vh]">
+    <div className="">
+      <section className="text-gray-400 bg-gray-700 body-font relative h-[100vh] overflow-hidden">
         <NavBar />
         <div className="container px-5 py-48 mx-auto">
           <div className="flex flex-col text-center w-full mb-12">
@@ -41,7 +41,7 @@ function Contact() {
                     htmlFor="email"
                     className="leading-7 text-sm text-gray-400"
                   >
-                    Email (Optional)
+                    Email
                   </label>
                   <input
                     autoComplete="off"
@@ -131,7 +131,7 @@ function Contact() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 
