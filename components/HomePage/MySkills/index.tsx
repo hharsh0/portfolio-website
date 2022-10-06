@@ -169,7 +169,6 @@ function MySkills() {
           </div>
         </div>
       </section>
-      <Card />
     </div>
   );
 }
