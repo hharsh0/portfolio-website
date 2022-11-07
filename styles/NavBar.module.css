@@ -8,12 +8,12 @@
     font-family: 'Lato', sans-serif;
 }
 
-.footerBackground{
+/* .footerBackground{
     background-image: url('/bg-pattern-footer.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .mainBackground{
     background-image: url('/main-background.png');
