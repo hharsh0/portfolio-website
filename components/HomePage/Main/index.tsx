@@ -39,7 +39,7 @@ function Main() {
               : "text-[#2D2D2D] border-[#5A5A5A]"
           } rounded-full  `}
         >
-          <Link href='/contact'>GET IN TOUCH</Link>
+          <Link href="/contact">GET IN TOUCH</Link>
         </button>
         <div className="mt-8">
           <DarkModeButton />

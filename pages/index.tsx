@@ -6,7 +6,7 @@ import MySkills from '../components/HomePage/MySkills'
 
 const Home: NextPage = () => {
   return (
-    <div className={``}>
+    <div className={`relative`}>
       <NavBar />
       <Main />
       <MySkills />
